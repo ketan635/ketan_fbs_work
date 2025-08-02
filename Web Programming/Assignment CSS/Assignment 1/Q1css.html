@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffffc;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    form {
+      background: rgb(185, 223, 211);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #f11111;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .gender-options,
+    .subject-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: green;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Student Registration Form</h1>
+
+    <label>Student Name:</label>
+    <input type="text" name="student_name" placeholder="Enter the name">
+
+    <label>Father Name:</label>
+    <input type="text" name="father_name" placeholder="Enter father's name">
+
+    <label>Mother Name:</label>
+    <input type="text" name="mother_name" placeholder="Enter mother's name">
+
+    <label>Date Of Birth:</label>
+    <input type="date" name="dob">
+
+    <label>Mobile Number:</label>
+    <input type="number" name="mobile" placeholder="Enter contact number">
+
+    <label>Student Mail ID:</label>
+    <input type="email" name="email" placeholder="Enter student email">
+
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter password" required>
+
+    <label>Gender:</label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+
+    <label>Subjects:</label>
+    <div class="subject-options">
+      <label><input type="checkbox" name="subject" value="Java"> Java</label>
+      <label><input type="checkbox" name="subject" value="Python"> Python</label>
+      <label><input type="checkbox" name="subject" value="Networking"> Networking</label>
+      <label><input type="checkbox" name="subject" value="C"> C</label>
+      <label><input type="checkbox" name="subject" value="Big Data"> Big Data</label>
+    </div>
+
+    <label>Student Photo:</label>
+    <input type="file" name="photo">
+
+    <label>Department:</label>
+    <select name="department">
+      <option value="BCA">BCA</option>
+      <option value="Com">Com</option>
+      <option value="Sci">Sci</option>
+      <option value="Art">Art</option>
+      <option value="MCA">MCA</option>
+    </select>
+
+    <label>City:</label>
+    <select name="city">
+      <option value="Kopargaon">Kopargaon</option>
+      <option value="Ahilyanagar">Ahilyanagar</option>
+      <option value="Pune">Pune</option>
+      <option value="Chatrapati Sambhajinagar">Chatrapati Sambhajinagar</option>
+      <option value="Akola">Akola</option>
+    </select>
+
+    <label>Address:</label>
+    <textarea name="address" rows="4" placeholder="Enter address"></textarea>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
