@@ -1,0 +1,67 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #b18041, #d2dd3d); /* optional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form with background image */
+.loginform {
+    background: url('https://as1.ftcdn.net/v2/jpg/07/81/48/52/1000_F_781485220_Q8By7oPwb0ZTXdFsJDDShTqOctODewHQ.jpghttps://as2.ftcdn.net/v2/jpg/09/09/10/05/1000_F_909100583_37eobQVEqkci9JnlJIcj6se4Y6oBFU6g.jpg') no-repeat center center;
+    background-size: cover;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional overlay for readability */
+.loginform::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.loginform * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Inputs and button */
+.loginform input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loginform input:focus {
+    outline: none;
+}
+
+.loginform button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    border: none;
